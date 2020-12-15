@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A36E97A258680AB005E7E87 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A36E979258680AB005E7E87 /* SettingsViewController.swift */; };
 		4AEDA1D225860F0800AE9C06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDA1D125860F0800AE9C06 /* AppDelegate.swift */; };
 		4AEDA1D425860F0800AE9C06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDA1D325860F0800AE9C06 /* SceneDelegate.swift */; };
 		4AEDA1D625860F0800AE9C06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDA1D525860F0800AE9C06 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A36E979258680AB005E7E87 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		4AEDA1CE25860F0800AE9C06 /* tip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEDA1D125860F0800AE9C06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AEDA1D325860F0800AE9C06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,9 +104,10 @@
 				4AEDA1D125860F0800AE9C06 /* AppDelegate.swift */,
 				4AEDA1D325860F0800AE9C06 /* SceneDelegate.swift */,
 				4AEDA1D525860F0800AE9C06 /* ViewController.swift */,
-				4AEDA1D725860F0800AE9C06 /* Main.storyboard */,
-				4AEDA1DA25860F0900AE9C06 /* Assets.xcassets */,
 				4AEDA1DC25860F0900AE9C06 /* LaunchScreen.storyboard */,
+				4AEDA1D725860F0800AE9C06 /* Main.storyboard */,
+				4A36E979258680AB005E7E87 /* SettingsViewController.swift */,
+				4AEDA1DA25860F0900AE9C06 /* Assets.xcassets */,
 				4AEDA1DF25860F0900AE9C06 /* Info.plist */,
 			);
 			path = tip;
@@ -261,6 +264,7 @@
 				4AEDA1D625860F0800AE9C06 /* ViewController.swift in Sources */,
 				4AEDA1D225860F0800AE9C06 /* AppDelegate.swift in Sources */,
 				4AEDA1D425860F0800AE9C06 /* SceneDelegate.swift in Sources */,
+				4A36E97A258680AB005E7E87 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
