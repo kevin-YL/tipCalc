@@ -45,9 +45,11 @@ class ViewController: UIViewController {
         if billAmountLabel.text!.count < 1 {
             billAmountLabel.text = "0."
         } else {
-            if billAmountLabel.text!.contains(".") {
+            if billAmountLabel.text!.count >= 1 && billAmountLabel.text!.contains(".") == false {
                 billAmountLabel.text! += "."
-
+            }
+            else if billAmountLabel.text!.contains(".") {
+                billAmountLabel.text = billAmountLabel.text
             }
         }
     }
