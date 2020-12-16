@@ -104,9 +104,9 @@
 				4AEDA1D125860F0800AE9C06 /* AppDelegate.swift */,
 				4AEDA1D325860F0800AE9C06 /* SceneDelegate.swift */,
 				4AEDA1D525860F0800AE9C06 /* ViewController.swift */,
+				4A36E979258680AB005E7E87 /* SettingsViewController.swift */,
 				4AEDA1DC25860F0900AE9C06 /* LaunchScreen.storyboard */,
 				4AEDA1D725860F0800AE9C06 /* Main.storyboard */,
-				4A36E979258680AB005E7E87 /* SettingsViewController.swift */,
 				4AEDA1DA25860F0900AE9C06 /* Assets.xcassets */,
 				4AEDA1DF25860F0900AE9C06 /* Info.plist */,
 			);
