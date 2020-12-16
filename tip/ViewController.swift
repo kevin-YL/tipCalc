@@ -15,9 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var paramView: UIView!
     @IBOutlet weak var partySize: UIStepper!
-    
-    var billAmountLabelNumber = 0;
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -26,26 +24,30 @@ class ViewController: UIViewController {
     
     @IBAction func numbers(_ sender: UIButton) {
         billAmountLabel.text = billAmountLabel.text! + String(sender.tag-1)
-        billAmountLabelNumber = Int(billAmountLabel.text!)!
-        
     }
 
     @IBAction func backspace(_ sender: UIButton) {
-        billAmountLabel.text = String(billAmountLabelNumber)
-        var stringg = billAmountLabel.text
-        if stringg!.count <= 1 {
+        if billAmountLabel.text!.count <= 1 {
             billAmountLabel.text = ""
-            billAmountLabelNumber = 0;
         } else {
-            stringg!.remove(at: stringg!.startIndex)
-            billAmountLabel.text = stringg
-            billAmountLabelNumber = Int(billAmountLabel.text!)!
+            billAmountLabel.text!.remove(at: billAmountLabel.text!.index(before: billAmountLabel.text!.endIndex))
             }
+    }
+    
+    @IBAction func decimal(_ sender: UIButton) {
+        if billAmountLabel.text!.count < 1 {
+            billAmountLabel.text = "0."
+        } else {
+            if billAmountLabel.text!.contains(".") {
+                billAmountLabel.text! += "."
+
+            }
+        }
     }
 
     @IBAction func clearButton(_ sender: UIButton) {
         billAmountLabel.text = ""
-        billAmountLabelNumber = 0;
+
         tipPercentageLabel.text = ""
         totalLabel.text = ""
         
@@ -55,7 +57,7 @@ class ViewController: UIViewController {
     
     @IBAction func calculateTip(_ sender: Any) {
         
-        billAmountLabel.text = String(billAmountLabelNumber)
+
         let bill = Double(billAmountLabel.text!) ?? 0
         let tipPercentages = [0.15, 0.18, 0.2]
         
