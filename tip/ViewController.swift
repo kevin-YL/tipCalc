@@ -4,6 +4,13 @@
 //
 //  Created by Kevin Sekuj on 12/13/20.
 //
+// TODO:
+//  autoresize  when ints too large
+//  multi lang support menu
+//  dark mode(?) flipped colors?
+//  settings sliders
+//  transition animation
+//  silhouette background
 
 import UIKit
 
