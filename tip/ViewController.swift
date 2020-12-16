@@ -6,7 +6,6 @@
 //
 // TODO:
 //  autoresize  when ints too large
-//  multi lang support menu
 //  dark mode(?) flipped colors?
 //  settings sliders
 //  transition animation
@@ -40,7 +39,6 @@ class ViewController: UIViewController {
             billAmountLabel.text!.remove(at: billAmountLabel.text!.index(before: billAmountLabel.text!.endIndex))
             }
     }
-    
     @IBAction func decimal(_ sender: UIButton) {
         if billAmountLabel.text!.count < 1 {
             billAmountLabel.text = "0."
