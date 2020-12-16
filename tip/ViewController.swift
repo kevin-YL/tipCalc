@@ -5,11 +5,8 @@
 //  Created by Kevin Sekuj on 12/13/20.
 //
 // TODO:
-//  autoresize  when ints too large
-//  dark mode(?) flipped colors?
 //  settings sliders
 //  transition animation
-//  silhouette background
 
 import UIKit
 
@@ -22,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var paramView: UIView!
     @IBOutlet weak var partySize: UIStepper!
  
+
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -42,6 +40,7 @@ class ViewController: UIViewController {
     @IBAction func decimal(_ sender: UIButton) {
         if billAmountLabel.text!.count < 1 {
             billAmountLabel.text = "0."
+            tipControl.selectedSegmentIndex = UISegmentedControl.noSegment
         } else {
             if billAmountLabel.text!.count >= 1 && billAmountLabel.text!.contains(".") == false {
                 billAmountLabel.text! += "."
@@ -54,16 +53,15 @@ class ViewController: UIViewController {
 
     @IBAction func clearButton(_ sender: UIButton) {
         billAmountLabel.text = ""
-
         tipPercentageLabel.text = ""
         totalLabel.text = ""
-        
+        tipControl.selectedSegmentIndex = UISegmentedControl.noSegment
     }
+    
     @IBAction func onTap(_ sender: Any) {
     }
     
     @IBAction func calculateTip(_ sender: Any) {
-        
 
         let bill = Double(billAmountLabel.text!) ?? 0
         let tipPercentages = [0.15, 0.18, 0.2]
@@ -75,6 +73,7 @@ class ViewController: UIViewController {
         //update tip and total labels
         tipPercentageLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        
     }
 }
 
