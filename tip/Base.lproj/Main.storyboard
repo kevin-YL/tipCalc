@@ -25,7 +25,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.082352941176470587" green="0.066666666666666666" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal">
-                                            <color key="titleColor" red="0.082352941176470587" green="0.066666666666666666" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.59032624960000002" green="0.20616465810000001" blue="0.21036279199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <imageReference key="image" image="gobackward" catalog="system" symbolScale="large"/>
                                         </state>
@@ -140,14 +140,6 @@
                                             <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="49a-Tc-f93"/>
                                         </connections>
                                     </button>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="m9D-AW-r3j">
-                                        <rect key="frame" x="268" y="0.0" width="94" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <action selector="partySizeValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hph-pi-PeB"/>
-                                        </connections>
-                                    </stepper>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Jjo-kZ-FjZ">
                                         <rect key="frame" x="34" y="1" width="143" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -185,6 +177,14 @@
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="m9D-AW-r3j">
+                                        <rect key="frame" x="268" y="1" width="94" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="partySizeValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hph-pi-PeB"/>
+                                        </connections>
+                                    </stepper>
                                 </subviews>
                                 <color key="backgroundColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.76078431372549016" green="0.15686274509803921" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
