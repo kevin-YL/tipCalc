@@ -3,10 +3,6 @@
 //  tip
 //
 //  Created by Kevin Sekuj on 12/13/20.
-//
-// TODO:
-//  settings sliders
-//  transition animation
 
 import UIKit
 
@@ -18,19 +14,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var paramView: UIView!
     @IBOutlet weak var partySize: UIStepper!
- 
-
+    @IBOutlet weak var partySizeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
         partySize.layer.cornerRadius = 10.0
+        partySizeLabel.text = "1"
     }
     
     @IBAction func numbers(_ sender: UIButton) {
         billAmountLabel.text = billAmountLabel.text! + String(sender.tag-1)
-    }
 
+    }
     @IBAction func backspace(_ sender: UIButton) {
+        tipPercentageLabel.text = ""
+        totalLabel.text = ""
+        tipControl.selectedSegmentIndex = UISegmentedControl.noSegment
         if billAmountLabel.text!.count <= 1 {
             billAmountLabel.text = ""
         } else {
@@ -38,9 +38,11 @@ class ViewController: UIViewController {
             }
     }
     @IBAction func decimal(_ sender: UIButton) {
+        tipPercentageLabel.text = ""
+        totalLabel.text = ""
+        tipControl.selectedSegmentIndex = UISegmentedControl.noSegment
         if billAmountLabel.text!.count < 1 {
             billAmountLabel.text = "0."
-            tipControl.selectedSegmentIndex = UISegmentedControl.noSegment
         } else {
             if billAmountLabel.text!.count >= 1 && billAmountLabel.text!.contains(".") == false {
                 billAmountLabel.text! += "."
@@ -58,6 +60,13 @@ class ViewController: UIViewController {
         tipControl.selectedSegmentIndex = UISegmentedControl.noSegment
     }
     
+    @IBAction func partySizeValueChanged(_ sender: UIButton) {
+        partySizeLabel.text = String(partySize.value)
+        tipPercentageLabel.text = ""
+        totalLabel.text = ""
+        tipControl.selectedSegmentIndex = UISegmentedControl.noSegment
+    }
+    
     @IBAction func onTap(_ sender: Any) {
     }
     
@@ -66,14 +75,14 @@ class ViewController: UIViewController {
         let bill = Double(billAmountLabel.text!) ?? 0
         let tipPercentages = [0.15, 0.18, 0.2]
         
-        // calculate tip and total
-        let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
-        let total = bill + tip
+        let tip = (bill * tipPercentages[tipControl.selectedSegmentIndex]) / partySize.value
         
-        //update tip and total labels
+        let total = (bill / partySize.value) + tip
+
         tipPercentageLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
-        
+        }
     }
-}
+
+
 
