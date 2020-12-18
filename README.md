@@ -37,17 +37,9 @@ GIF created with [Rerecordit](https://recordit.co/).
 
 ## Notes
 
-  The greatest challenge in building this application was getting a hang of Swift's syntax as well as figuring out how to navigate Xcode.  
-  As such, I spent the first day of development attempting to build the skeleton of the application according to the CodePath tutorial just 
-  to get acquainted with the iOS development tools. After building it successfully, I thought it might be rather interesting and novel to get
-  rid of the built in iOS keyboard completely and build a custom keypad which is on screen at all times, akin to a calculator or phone keypad.
+  The greatest challenge in building this application was getting a hang of Swift's syntax as well as figuring out how to navigate Xcode. As such, I spent the first day of development attempting to build the skeleton of the application according to the CodePath tutorial just  to get acquainted with the iOS development tools. After building it successfully, I thought it might be rather interesting and novel to get rid of the built in iOS keyboard completely and build a custom keypad which is on screen at all times, akin to a calculator or phone keypad.
 	
-  Implementing the custom keypad was quite a bit more difficult than I thought, especially for someone with no experience in Swift, and a novice
-  programmer in general. Implementing the actual  keypad with numbers 0-9 was straightforward enough, but the backspace and decimal buttons were
-  a bit more complex. In the process, however, I learned a good deal of Swift functionality including how arrays and their indices are represented,
-  as well as various built-in functions. In retrospect, it may have been more efficient to read the Swift documentation before attempting to build the app,
-  and I certainly spent a significant amount of time googling the language’s syntax or Xcode’s functionality. Even still, I decided it’d be a better and more 
-  interesting learning experience to just jump in head first and start coding.
+  Implementing the custom keypad was quite a bit more difficult than I thought, especially for someone with no experience in Swift, and a novice programmer in general. Implementing the actual  keypad with numbers 0-9 was straightforward enough, but the backspace and decimal buttons were a bit more complex. In the process, however, I learned a good deal of Swift functionality including how arrays and their indices are represented, as well as various built-in functions. In retrospect, it may have been more efficient to read the Swift documentation before attempting to build the app, and I certainly spent a significant amount of time googling the language’s syntax or Xcode’s functionality. Even still, I decided it’d be a better and more interesting learning experience to just jump in head first and start coding.
 
 
 ## License
