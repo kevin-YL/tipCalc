@@ -4,7 +4,7 @@ tip.me is a tip calculator application for iOS.
 
 Submitted by: Kevin Sekuj
 
-Time spent: 15-20 hours spent in total over 3-4 days
+Time spent: 15-20 hours
 
 ## User Stories
 
