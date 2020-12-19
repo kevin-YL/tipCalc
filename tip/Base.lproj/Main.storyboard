@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,7 +30,8 @@
                                             <imageReference key="image" image="gobackward" catalog="system" symbolScale="large"/>
                                         </state>
                                         <connections>
-                                            <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hl4-ea-MCy"/>
+                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U7C-V5-a9l"/>
+                                            <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jqp-N0-DrY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -47,7 +48,7 @@
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
                                         <state key="normal" title="1"/>
                                         <connections>
-                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OON-LS-rxS"/>
+                                            <action selector="keyPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="82r-3g-ZE6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGb-de-lQM">
@@ -56,7 +57,7 @@
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
                                         <state key="normal" title="0"/>
                                         <connections>
-                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oWR-w9-7uV"/>
+                                            <action selector="keyPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Am-7m-OaL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNb-K3-sDM">
@@ -65,7 +66,8 @@
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
                                         <state key="normal" title="."/>
                                         <connections>
-                                            <action selector="decimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oma-l2-ApT"/>
+                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I5s-C2-yDc"/>
+                                            <action selector="decimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M0J-5N-tKk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxa-Iu-kSX">
@@ -74,7 +76,7 @@
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
                                         <state key="normal" title="2"/>
                                         <connections>
-                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u6c-az-gXN"/>
+                                            <action selector="keyPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="79d-kX-Iff"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S37-i8-BEk">
@@ -83,7 +85,7 @@
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
                                         <state key="normal" title="3"/>
                                         <connections>
-                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LeF-TL-mFj"/>
+                                            <action selector="keyPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6xR-zJ-Zgg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXa-7U-pSI">
@@ -92,7 +94,7 @@
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
                                         <state key="normal" title="4"/>
                                         <connections>
-                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="30M-wZ-N5X"/>
+                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p5H-f5-UjO"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6f5-Of-NRm">
@@ -101,7 +103,7 @@
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
                                         <state key="normal" title="5"/>
                                         <connections>
-                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="grj-Jd-p5K"/>
+                                            <action selector="keyPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rbu-wz-9QY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIV-hN-Co3">
@@ -110,7 +112,7 @@
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
                                         <state key="normal" title="6"/>
                                         <connections>
-                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KSj-Ep-eJE"/>
+                                            <action selector="keyPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GRB-ku-9zf"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFy-LJ-lP3">
@@ -119,7 +121,7 @@
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
                                         <state key="normal" title="7"/>
                                         <connections>
-                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="15E-Ya-ZFx"/>
+                                            <action selector="keyPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DVf-73-H7v"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAH-3U-PfR">
@@ -128,7 +130,7 @@
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
                                         <state key="normal" title="8"/>
                                         <connections>
-                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5CG-zk-KXZ"/>
+                                            <action selector="keyPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Uy-7h-dmq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sn5-Wv-ORt">
@@ -137,10 +139,10 @@
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
                                         <state key="normal" title="9"/>
                                         <connections>
-                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="49a-Tc-f93"/>
+                                            <action selector="keyPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EKs-ro-3BA"/>
                                         </connections>
                                     </button>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Jjo-kZ-FjZ">
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Jjo-kZ-FjZ">
                                         <rect key="frame" x="34" y="1" width="143" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
@@ -152,7 +154,7 @@
                                         <color key="tintColor" red="0.39607843139999999" green="0.1960784314" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="selectedSegmentTintColor" red="0.76078431372549016" green="0.15686274509803921" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="cHL-ol-Cqh"/>
+                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="OhQ-xO-Kvd"/>
                                         </connections>
                                     </segmentedControl>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="person.3.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="F9B-Ru-nfm">
@@ -167,7 +169,8 @@
                                             <imageReference key="image" image="delete.left.fill" catalog="system" symbolScale="large"/>
                                         </state>
                                         <connections>
-                                            <action selector="backspace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G8h-eF-k3Z"/>
+                                            <action selector="backspace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgH-Cu-15i"/>
+                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dyB-ml-TQb"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoD-ng-866">
@@ -182,21 +185,14 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <action selector="partySizeValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hph-pi-PeB"/>
+                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="3V0-rb-9cj"/>
+                                            <action selector="partySizeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="0iy-Tj-5eB"/>
                                         </connections>
                                     </stepper>
                                 </subviews>
                                 <color key="backgroundColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.76078431372549016" green="0.15686274509803921" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yoA-5w-0Sg">
-                                <rect key="frame" x="15" y="700" width="186" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="35"/>
-                                <color key="textColor" red="0.93725490196078431" green="0.93333333333333335" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="enter your bill." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCh-t0-NPO">
                                 <rect key="frame" x="41" y="137" width="176" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -206,47 +202,58 @@
                                 <color key="textColor" red="0.76078431372549016" green="0.15686274509803921" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tip:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCy-ZM-fDc">
-                                <rect key="frame" x="59" y="673" width="58" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.073625601829999998" green="0.1065245494" blue="0.1373607516" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="23"/>
-                                <color key="textColor" red="0.76078431372549016" green="0.15686274509803921" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="dollarsign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NtY-nm-8TY">
                                 <rect key="frame" x="41" y="178.5" width="49" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.93725490196078431" green="0.93333333333333335" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NGj-pK-NBK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDY-cA-ZaU">
                                 <rect key="frame" x="209" y="700" width="200" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="35"/>
-                                <color key="textColor" red="0.93725490196078431" green="0.93333333333333335" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.073625601829999998" green="0.1065245494" blue="0.1373607516" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDY-cA-ZaU">
-                                <rect key="frame" x="295" y="673" width="120" height="34"/>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Dg-m2-TLB">
+                                <rect key="frame" x="84" y="228" width="247" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="71"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="xgI-b8-hf9"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCy-ZM-fDc">
+                                <rect key="frame" x="15" y="700" width="186" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tip:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSe-rv-NdV">
+                                <rect key="frame" x="41" y="670" width="58" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.073625601829999998" green="0.1065245494" blue="0.1373607516" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="23"/>
-                                <color key="textColor" red="0.76078431372549016" green="0.15686274509803921" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.76078431369999999" green="0.15686274510000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mWW-Dd-o65">
-                                <rect key="frame" x="98" y="198" width="218" height="104"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LI3-kO-vyc">
+                                <rect key="frame" x="308" y="670" width="66" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="80"/>
-                                <color key="textColor" red="0.93725490196078431" green="0.93333333333333335" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.073625601829999998" green="0.1065245494" blue="0.1373607516" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="23"/>
+                                <color key="textColor" red="0.76078431369999999" green="0.15686274510000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="6oF-Ni-gKk" appends="YES" id="7up-Fu-2jt"/>
@@ -254,19 +261,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="giG-gi-Lt5"/>
                     <connections>
-                        <outlet property="billAmountLabel" destination="mWW-Dd-o65" id="nuW-1K-zVC"/>
-                        <outlet property="paramView" destination="uIB-xF-Os5" id="1FG-rF-eJa"/>
-                        <outlet property="partySize" destination="m9D-AW-r3j" id="ykB-bj-wBB"/>
-                        <outlet property="partySizeLabel" destination="SoD-ng-866" id="WgJ-i3-CDO"/>
-                        <outlet property="tipControl" destination="Jjo-kZ-FjZ" id="XUm-OS-jcn"/>
-                        <outlet property="tipPercentageLabel" destination="yoA-5w-0Sg" id="q4h-f9-JWP"/>
-                        <outlet property="totalLabel" destination="NGj-pK-NBK" id="1BY-nH-st2"/>
+                        <outlet property="billAmountTextField" destination="5Dg-m2-TLB" id="tN3-fK-UYD"/>
+                        <outlet property="partySizeUILabel" destination="SoD-ng-866" id="jAB-y2-fDl"/>
+                        <outlet property="partySizeUIStepper" destination="m9D-AW-r3j" id="oJS-HT-tw0"/>
+                        <outlet property="tipControl" destination="Jjo-kZ-FjZ" id="hhT-1H-7rW"/>
+                        <outlet property="tipPercentageLabel" destination="BCy-ZM-fDc" id="Dcj-YD-FIX"/>
+                        <outlet property="totalLabel" destination="pDY-cA-ZaU" id="EdV-Kf-wrK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="6oF-Ni-gKk">
                     <connections>
-                        <action selector="onTap:" destination="BYZ-38-t0r" id="oPS-B7-CdX"/>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="OYK-2H-sNO"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
