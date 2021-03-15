@@ -1,4 +1,4 @@
-# Pre-work - CodePath tip calculator
+# iOS tip calculator
 
 tip.me is a tip calculator application for iOS.
 
